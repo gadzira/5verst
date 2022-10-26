@@ -27,3 +27,7 @@ type Precipitation struct {
 	Amount    float32 `db:"amount" json:"amount" description:""`
 	Intensity int64   `db:"intensity" json:"intensity" description:""`
 }
+
+type EventsLookupForm struct {
+	Park string `db:"park" json:"park"  description:""`
+}
