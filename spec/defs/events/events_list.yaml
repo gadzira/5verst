@@ -1,0 +1,9 @@
+description: List of Events
+type: array
+items:
+  $ref: 'event.yaml'
+  x-nullable: false
+x-go-type:
+  import:
+    package: "gitlab.local/xsolla-launcher/go-launcher/internal/domain"
+  type: "EventsList"

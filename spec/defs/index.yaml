@@ -1,0 +1,19 @@
+type: object
+title: Index
+properties:
+  info:
+    description: API description
+    type: string
+  version:
+    description: API versionn.
+    type: string
+  commit:
+    description: Commit ID
+    type: string
+  date:
+    description: API build date.
+    type: string
+example:
+  info: Launcher API
+  version: v202100302
+  date: 02 March 2021

@@ -1,0 +1,26 @@
+description: Launcher Project
+type: object
+required:
+  - name
+  - date
+  - park
+properties:
+  name:
+    description: Name of New Event
+    type: string
+    minLength: 1
+    maxLength: 21
+    example: Fox Paths
+    x-nullable: false
+  date:
+    description: Date of Event 
+    type: string
+    format: date-time
+    x-example: the date-time notation as defined by RFC 3339, section 5.6, for example, 2017-07-21T17:32:28Z
+    x-nullable: false
+  park:
+    description: Park where it will happen
+    type: string
+    example: Rasskazovka
+    x-nullable: false
+  

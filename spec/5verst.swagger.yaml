@@ -1,0 +1,46 @@
+swagger: "2.0"
+info:
+  description: |-
+    5Verst - application for plans the new running events.
+
+    ### Steps to start working with 5Verst API
+    1. Post the suggest about new events.
+    2. Get Get the list of suggested events with weather predictions.
+
+    ### Groups of Methods
+    * **Events** for create new events or get the list of events.
+
+    ****
+
+    Find more information
+    * about the 5Verst [5verst.ru](https://5verst.ru/)
+
+  title: 5 Verst API
+  contact:
+    email: info@5verst.ru
+  version: v2-go
+parameters:
+  Authorization_JWT:
+    type: string
+    x-example: Bearer {JWT}
+    name: Authorization
+    in: header
+    required: true
+consumes:
+  - application/json
+produces:
+  - application/json
+schemes:
+  - http
+securityDefinitions:
+  JWT:
+    type: apiKey
+    in: header
+    name: Authorization
+security:
+  - JWT: []
+paths:
+  /:
+    $ref: "paths/index.yaml"
+  /events:
+    $ref: "paths/events/events.yaml"

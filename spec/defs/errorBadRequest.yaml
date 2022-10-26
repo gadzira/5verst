@@ -1,0 +1,18 @@
+type: object
+title: ErrorBadRequest
+required:
+  - code
+  - message
+properties:
+  code:
+    description: HTTP status code.
+    type: integer
+    format: int32
+    x-nullable: false
+  message:
+    description: Error message.
+    type: string
+    x-nullable: false
+example:
+  code: 400
+  message: Bad Request
