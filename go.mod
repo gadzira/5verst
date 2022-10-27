@@ -3,6 +3,7 @@ module github.com/5verst
 go 1.19
 
 require (
+	github.com/gorilla/mux v1.8.0 // indirect
 	github.com/jmoiron/sqlx v1.3.5 // indirect
 	github.com/joho/godotenv v1.4.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
